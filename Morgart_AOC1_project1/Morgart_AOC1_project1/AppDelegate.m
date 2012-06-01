@@ -24,6 +24,40 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    
+    // Set my floating point variable
+    float currentHour = 24.5f;
+    
+    // Use my float variable from above and Cast it as an integer
+    int roundedHour = (int)currentHour;
+    
+    // Use NSLog to show both variables in the console
+    NSLog(@"currentHour=%.1f", currentHour);
+    NSLog(@"roundedHour=%d", roundedHour);
+    
+    // if, else statements coupled with AND, OR statements
+    
+    if ((currentHour > 0) && (currentHour < 1))
+    {
+        NSLog(@"An hour has not yet passed.");
+    }
+    else if ((currentHour > 1) && (currentHour < 2))
+    {
+        NSLog(@"One hour has passed today.");
+    }
+    else if ((currentHour > 2) && (currentHour < 24))
+    {
+        NSLog(@"Another hour has passed today.");
+    }
+    else if ((currentHour > 24) || (currentHour < 0))
+    {
+        NSLog(@"It is a New Day!");
+    }
+    
+    
+    
+    
     return YES;
 }
 
