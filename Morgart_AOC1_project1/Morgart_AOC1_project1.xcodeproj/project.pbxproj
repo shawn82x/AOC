@@ -1,0 +1,264 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1037B6F157857BC0057850E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1037B6E157857BC0057850E /* UIKit.framework */; };
+		F1037B71157857BC0057850E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1037B70157857BC0057850E /* Foundation.framework */; };
+		F1037B73157857BC0057850E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1037B72157857BC0057850E /* CoreGraphics.framework */; };
+		F1037B79157857BC0057850E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F1037B77157857BC0057850E /* InfoPlist.strings */; };
+		F1037B7B157857BC0057850E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1037B7A157857BC0057850E /* main.m */; };
+		F1037B7F157857BC0057850E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1037B7E157857BC0057850E /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F1037B6A157857BC0057850E /* Morgart_AOC1_project1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Morgart_AOC1_project1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1037B6E157857BC0057850E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F1037B70157857BC0057850E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F1037B72157857BC0057850E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F1037B76157857BC0057850E /* Morgart_AOC1_project1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Morgart_AOC1_project1-Info.plist"; sourceTree = "<group>"; };
+		F1037B78157857BC0057850E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F1037B7A157857BC0057850E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F1037B7C157857BC0057850E /* Morgart_AOC1_project1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Morgart_AOC1_project1-Prefix.pch"; sourceTree = "<group>"; };
+		F1037B7D157857BC0057850E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F1037B7E157857BC0057850E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1037B67157857BC0057850E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1037B6F157857BC0057850E /* UIKit.framework in Frameworks */,
+				F1037B71157857BC0057850E /* Foundation.framework in Frameworks */,
+				F1037B73157857BC0057850E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1037B5F157857BB0057850E = {
+			isa = PBXGroup;
+			children = (
+				F1037B74157857BC0057850E /* Morgart_AOC1_project1 */,
+				F1037B6D157857BC0057850E /* Frameworks */,
+				F1037B6B157857BC0057850E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1037B6B157857BC0057850E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1037B6A157857BC0057850E /* Morgart_AOC1_project1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1037B6D157857BC0057850E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1037B6E157857BC0057850E /* UIKit.framework */,
+				F1037B70157857BC0057850E /* Foundation.framework */,
+				F1037B72157857BC0057850E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1037B74157857BC0057850E /* Morgart_AOC1_project1 */ = {
+			isa = PBXGroup;
+			children = (
+				F1037B7D157857BC0057850E /* AppDelegate.h */,
+				F1037B7E157857BC0057850E /* AppDelegate.m */,
+				F1037B75157857BC0057850E /* Supporting Files */,
+			);
+			path = Morgart_AOC1_project1;
+			sourceTree = "<group>";
+		};
+		F1037B75157857BC0057850E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F1037B76157857BC0057850E /* Morgart_AOC1_project1-Info.plist */,
+				F1037B77157857BC0057850E /* InfoPlist.strings */,
+				F1037B7A157857BC0057850E /* main.m */,
+				F1037B7C157857BC0057850E /* Morgart_AOC1_project1-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1037B69157857BC0057850E /* Morgart_AOC1_project1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1037B82157857BC0057850E /* Build configuration list for PBXNativeTarget "Morgart_AOC1_project1" */;
+			buildPhases = (
+				F1037B66157857BC0057850E /* Sources */,
+				F1037B67157857BC0057850E /* Frameworks */,
+				F1037B68157857BC0057850E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Morgart_AOC1_project1;
+			productName = Morgart_AOC1_project1;
+			productReference = F1037B6A157857BC0057850E /* Morgart_AOC1_project1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1037B61157857BB0057850E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Full Sail University";
+			};
+			buildConfigurationList = F1037B64157857BB0057850E /* Build configuration list for PBXProject "Morgart_AOC1_project1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F1037B5F157857BB0057850E;
+			productRefGroup = F1037B6B157857BC0057850E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1037B69157857BC0057850E /* Morgart_AOC1_project1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1037B68157857BC0057850E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1037B79157857BC0057850E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1037B66157857BC0057850E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1037B7B157857BC0057850E /* main.m in Sources */,
+				F1037B7F157857BC0057850E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F1037B77157857BC0057850E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1037B78157857BC0057850E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1037B80157857BC0057850E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1037B81157857BC0057850E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1037B83157857BC0057850E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Morgart_AOC1_project1/Morgart_AOC1_project1-Prefix.pch";
+				INFOPLIST_FILE = "Morgart_AOC1_project1/Morgart_AOC1_project1-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F1037B84157857BC0057850E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Morgart_AOC1_project1/Morgart_AOC1_project1-Prefix.pch";
+				INFOPLIST_FILE = "Morgart_AOC1_project1/Morgart_AOC1_project1-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1037B64157857BB0057850E /* Build configuration list for PBXProject "Morgart_AOC1_project1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1037B80157857BC0057850E /* Debug */,
+				F1037B81157857BC0057850E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1037B82157857BC0057850E /* Build configuration list for PBXNativeTarget "Morgart_AOC1_project1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1037B83157857BC0057850E /* Debug */,
+				F1037B84157857BC0057850E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1037B61157857BB0057850E /* Project object */;
+}
