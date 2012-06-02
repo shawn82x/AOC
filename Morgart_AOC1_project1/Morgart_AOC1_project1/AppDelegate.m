@@ -55,6 +55,28 @@
         NSLog(@"It is a New Day!");
     }
     
+    // single "for" loop
+    for (int roundedHour=0; roundedHour < 25; roundedHour++) {
+        NSLog(@"hello: %d", roundedHour);
+    }
+    
+    // "Nested" "for" loop
+    for (int roundedHour=1; roundedHour < 25; roundedHour++) {
+        for (int hourMin=0; hourMin < 60; hourMin++) {
+            NSLog(@"Current Time is: %d:%d", roundedHour, hourMin);        }
+    }
+    
+    // "While" loop
+    int dayOfMonth = 1;
+    
+    while (dayOfMonth < 32) {
+        NSLog(@"The date is: %d", dayOfMonth);
+        dayOfMonth++;
+    }
+    
+    
+    
+    
     
     
     
