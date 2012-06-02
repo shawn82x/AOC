@@ -75,6 +75,17 @@
     }
     
     
+    // Putting them all together
+    int monthDay = 1;
+    
+    do {
+        NSLog(@"The day of the month is: %d", monthDay);
+        for (int roundedHour=1; roundedHour < 25; roundedHour++) {
+            for (int hourMin=0; hourMin < 60; hourMin++) {
+                NSLog(@"Current Time is: %d:%d", roundedHour, hourMin);        }
+        }
+        monthDay++;
+    } while (monthDay < 32);
     
     
     
