@@ -67,10 +67,10 @@
     pubLabel = [[UILabel alloc] initWithFrame:CGRectMake(100.0f, 100.0f, 184.0f, 20.0f)];
     if (pubLabel != nil)
     {
-        pubLabel.backgroundColor = [UIColor colorWithRed:0.651 green:0.349 blue:0 alpha:1.0];
+        pubLabel.backgroundColor = [UIColor colorWithRed:1 green:0.651 blue:0.251 alpha:1.0];
         pubLabel.text = @"Published:";
         pubLabel.textAlignment = UITextAlignmentRight;
-        pubLabel.textColor = [UIColor colorWithRed:1 green:0.651 blue:0.251 alpha:1.0];
+        pubLabel.textColor = [UIColor colorWithRed:0.651 green:0.349 blue:0 alpha:1.0];
         pubLabel.font = [UIFont boldSystemFontOfSize:16];
     }
     
@@ -121,7 +121,7 @@
 // Set Label for "List of Items:" heading.
 // Modified background and font colors and font size.
     
-    listLabel = [[UILabel alloc] initWithFrame:CGRectMake(334.0f, 360.0f, 184.0f, 40.0f)];
+    listLabel = [[UILabel alloc] initWithFrame:CGRectMake(292.0f, 360.0f, 184.0f, 40.0f)];
     if (listLabel != nil)
     {
         listLabel.backgroundColor = [UIColor colorWithRed:0 green:0.522 blue:0 alpha:1.0];
@@ -131,26 +131,36 @@
         listLabel.font = [UIFont boldSystemFontOfSize:16];
     }
     
-// Create array to hold the list items. Loop through the array and prepare to display on page.
+// Create array to hold the list items.
     
     NSArray *itemArray = [[NSArray alloc] initWithObjects:@"Ireland", @"Vikings", @"War", @"Politics", @"Dark Ages", nil];
     
-    for (int i=0; i<[itemArray count]; i++)
+    
+// Create Mutable NSArray for looping and modification.
+    
+    NSMutableString *itemArrayString = [[NSMutableString alloc] initWithCapacity:5];
+    
+    int counter;
+    int itemSize = itemArray.count;
+    
+    for (counter = 0; counter < itemSize; counter++)
     {
-        (NSString *)substringFromIndex:(NSUInteger)from;
+        [itemArrayString appendString: [itemArray objectAtIndex: counter]];
+        if (counter < itemArray.count -1)
+            [itemArrayString appendString: @", "];
     }
     
     
 // Create Label box to hold the list of items contained in the array.
 // Modified background and font colors and font size.
     
-    listTextLabel = [[UILabel alloc] initWithFrame:CGRectMake(334.0f, 400.0f, 184.0f, 20.0f)];
+    listTextLabel = [[UILabel alloc] initWithFrame:CGRectMake(192.0f, 400.0f, 384.0f, 40.0f)];
     if (listTextLabel != nil)
     {
-        listTextLabel.backgroundColor = [UIColor colorWithRed:0.651 green:0.349 blue:0 alpha:1.0];
-        listTextLabel.text = ;
-        listTextLabel.textAlignment = UITextAlignmentRight;
-        listTextLabel.textColor = [UIColor colorWithRed:1 green:0.651 blue:0.251 alpha:1.0];
+        listTextLabel.backgroundColor = [UIColor colorWithRed:0 green:0.6 blue:0.6 alpha:1.0];
+        listTextLabel.text = itemArrayString;
+        listTextLabel.textAlignment = UITextAlignmentCenter;
+        listTextLabel.textColor = [UIColor colorWithRed:1 green:0 blue:0 alpha:1.0];
         listTextLabel.font = [UIFont boldSystemFontOfSize:16];
     }
     
