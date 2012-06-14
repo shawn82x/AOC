@@ -42,7 +42,15 @@
     [self myCompare:@"When comparing..." firstInt2:3 secondInt2:4];
     
     // 3. Call function called "Append".
-    [self myAppend:@"This is the first half of my sentance..." appString2:@"this is the appended half of my sentance."];
+    [self myAppend:@"This is the first half of my string..."];
+   
+    
+    // 4. Display "Append" function in UIAlertView
+    UIAlertView *appendView = [[UIAlertView alloc] initWithTitle:@"Append Function View" message:@"" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    if (appendView != nil)
+    {
+        [appendView show];
+    }
     
     [super viewDidAppear:animated];
     
@@ -82,22 +90,30 @@
 //    This function will take two NSStrings and return a new NSString 
 //    containing the appended strings using an NSMutableString and the Append method.
 
-- (void)myAppend: (NSString*)appString1 appString2:(NSString*)appString2
+- (void)myAppend: (NSString*)appString1
     {
-        NSMutableString - (void)appendString:(NSString *)aString;
-        NSLog();
+        NSMutableString *appString2 = [[NSMutableString alloc] initWithString:@"this is the second half of my string!"];
+        NSLog(@"%@ %@", appString1, appString2);
+        
     }
 
 
 // 4. Call the Append function with two NSStrings. 
 //    Capture the result and display a UIAlertView with 
 //    the appended string using displayAlertWithString.
+//  ABOVE.
+                                                                                                  
 
 
 // 5. Create a function called DisplayAlertWithString. 
 //    This function will take as a parameter an NSString.
-
-
+                                                                                                  
+- (void) myDisplayAlertWithString: (NSString*)displString
+    {
+        
+    }
+                                                                                                  
+                                                                                                  
 // 6. Call the Add function passing in two integer values. 
 //    Capture the return of this function into a variable.
 

@@ -19,6 +19,9 @@
 - (int)myCompare: (NSString*)introString2 firstInt2:(int)firstInt2 secondInt2:(int)secondInt2;
 
 // 3.
-- (void)myAppend: (NSString*)appString1 appString2:(NSString*)appString2;
+- (void)myAppend: (NSString*)appString1;
+
+// 4.
+- (void) myDisplayAlertWithString: (NSString*)displString;
 
 @end
