@@ -36,14 +36,31 @@
 {
     
     // 1. Call function called "Add".
-    [self myAdd:@"The result for the myAdd function is:" firstInt:2 secondInt:4];
+    //[self myAdd:@"The result for the myAdd function is:" firstInt:2 secondInt:4];
+    
+    oldSwords = 7;
+    newSwords = 8;
+    totalSwords = [self Add:oldSwords with:newSwords];
+    numOfWeapons = [[NSNumber alloc] initWithInt:totalSwords];
+    availSwords = [numOfWeapons stringValue];
+    totalSwordsString = [[NSString alloc] initWithFormat:@"%@", numOfWeapons];
+    armory = [[NSString alloc] initWithFormat:@"The number of aged swords is: %d, the number of newly purchased swords is: %d, the total availabe usable weapons is: %@."];
+    
     
     // 2. Call function called "Compare".
-    [self myCompare:@"When comparing..." firstInt2:3 secondInt2:4];
+    // [self myCompare:@"When comparing..." firstInt2:3 secondInt2:4];
+    
+    fighters = 15;
+    BOOL swordsUsed = [self Compare:totalSwords with:fighters];
+    armedSoldiers = [[NSString alloc] initWithFormat:@"Is %d enough swords for %d fighters?", totalSwords, fighters? @"Yes, They are armed and ready!": @"No, We need more weapons!"];
+    
     
     // 3. Call function called "Append".
-    [self myAppend:@"This is the first half of my string..."];
-   
+    // [self myAppend:@"This is the first half of my string..." appString2:@"this is the second half of my string"];
+    
+    generalsOrders = [[NSString alloc] initWithFormat:@"At your Ready!"];
+    soldiersResponse = [[NSString alloc] initWithFormat:@"Huzzah!"];
+    commandRespond = [self append:generalsOrders with:soldiersResponse];
     
     // 4. Display "Append" function in UIAlertView
     UIAlertView *appendView = [[UIAlertView alloc] initWithTitle:@"Append Function View" message:@"" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
@@ -63,25 +80,22 @@
 //    This function will take two NSInteger or int types and 
 //    return the result of an addition between these two.
 
-- (void)myAdd:(NSString*)introString firstInt:(int)firstInt secondInt:(int)secondInt
+- (int)Add:(int)firstInt with:(int)secondInt
     {
-        int addedInts = (firstInt + secondInt);
-        NSLog(@"%@ %d + %d = %d", introString, firstInt, secondInt, addedInts);
+        return firstInt + secondInt;
     }
 
 // 2. Create a function called Compare that takes two NSInteger values. 
 //    Return true or false based on whether the values are equal.
 
-- (int)myCompare: (NSString*)introString2 firstInt2:(int)firstInt2 secondInt2:(int)secondInt2
+- (BOOL)Compare:(int)firstInt2 with:(int)secondInt2
     {
         if (firstInt2 == secondInt2)
             {
-                NSLog(@"%@ %d to %d we find they are Equal", introString2, firstInt2, secondInt2);
-                return TRUE;
+                return YES;
             }
             else {
-                NSLog(@"%@ %d to %d we find they are NOT equal", introString2, firstInt2, secondInt2);
-                return FALSE;
+                return NO;
             }
     }
 
@@ -90,11 +104,11 @@
 //    This function will take two NSStrings and return a new NSString 
 //    containing the appended strings using an NSMutableString and the Append method.
 
-- (void)myAppend: (NSString*)appString1
+- (NSString*)append: (NSString*)appString1 with:(NSString*)appString2
     {
-        NSMutableString *appString2 = [[NSMutableString alloc] initWithString:@"this is the second half of my string!"];
-        NSLog(@"%@ %@", appString1, appString2);
-        
+        NSMutableString *appendOne = [NSMutableString addedString:appString1];
+        NSString *appString3 = [appendOne stringByAppendingString:appString2];
+        return appString3;
     }
 
 
@@ -108,9 +122,9 @@
 // 5. Create a function called DisplayAlertWithString. 
 //    This function will take as a parameter an NSString.
                                                                                                   
-- (void) myDisplayAlertWithString: (NSString*)displString
+- (void) myDisplayAlertWithString: (NSString*)appString3
     {
-        
+        dispString = [[UIAlertView alloc] initWithTitle:@"Alert View" message:appString3 delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     }
                                                                                                   
                                                                                                   

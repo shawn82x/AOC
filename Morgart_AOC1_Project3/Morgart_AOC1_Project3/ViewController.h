@@ -10,7 +10,23 @@
 
 @interface ViewController : UIViewController
 {
+    int oldSwords;
+    int newSwords;
+    int totalSwords;
+    int numOfWeapons;
+    int fighters;
     
+    NSString *commandRespond;
+    NSString *generalsOrders;
+    NSString *soldiersResponse;
+    NSString *armedSoldiers;
+    NSString *availSwords;
+    NSString *armory;
+    NSString *totalSwordsString;
+    NSString *appString1;
+    NSString *appString2; 
+    NSString *appString3;
+    UIAlertView *dispString;
 }
 // 1.
 - (void)myAdd:(NSString*)introString firstInt:(int)firstInt secondInt:(int)secondInt;
@@ -22,6 +38,9 @@
 - (void)myAppend: (NSString*)appString1;
 
 // 4.
-- (void) myDisplayAlertWithString: (NSString*)displString;
+- (void)myAppend: (NSString*)appString1 appString2:(NSString*)appString2;
+
+// 5.
+- (void) myDisplayAlertWithString: (NSString*)appString3;
 
 @end
