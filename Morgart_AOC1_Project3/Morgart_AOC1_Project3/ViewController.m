@@ -37,6 +37,8 @@
     
     // 1. Call function called "Add".
     //[self myAdd:@"The result for the myAdd function is:" firstInt:2 secondInt:4];
+    // 7. pt.1. Bundle the returned integer into an NSNumber and then convert it 
+    //    to a NSString and pass it to the DisplayAlertWithString function.
     
     oldSwords = 7;
     newSwords = 8;
@@ -44,15 +46,21 @@
     numOfWeapons = [[NSNumber alloc] initWithInt:totalSwords];
     availSwords = [numOfWeapons stringValue];
     totalSwordsString = [[NSString alloc] initWithFormat:@"%@", numOfWeapons];
-    armory = [[NSString alloc] initWithFormat:@"The number of aged swords is: %d, the number of newly purchased swords is: %d, the total availabe usable weapons is: %@."];
+    
+    // 8. Give it some text for the title. 
+    //    The message will read, "The number is 00". 
+    //    Replace the 00 with the integer passed into the function. "the total available usable weapons is..."
+    armory = [[NSString alloc] initWithFormat:@"The number of aged swords is: %d, the number of newly purchased swords is: %d, the total availabe usable weapons is: %@.", oldSwords, newSwords, numOfWeapons];
     
     
     // 2. Call function called "Compare".
-    // [self myCompare:@"When comparing..." firstInt2:3 secondInt2:4];
+    // 9. Call the Compare function with two integer values. 
+    //    If Compare returns true, display an UIAlertView both with the input values 
+    //    and the result using the DisplayAlertWithString function
     
     fighters = 15;
     BOOL swordsUsed = [self Compare:totalSwords with:fighters];
-    armedSoldiers = [[NSString alloc] initWithFormat:@"Is %d enough swords for %d fighters?", totalSwords, fighters? @"Yes, They are armed and ready!": @"No, We need more weapons!"];
+    armedSoldiers = [[NSString alloc] initWithFormat:@"Is %d enough swords for %d fighters? %@", totalSwords, fighters, swordsUsed? @"Yes, get Ready for Battle!":@"No, order more weapons!"];
     
     
     // 3. Call function called "Append".
@@ -65,6 +73,9 @@
     // 4. Display "Append" function in UIAlertView
     [self displayAlertWithString:armedSoldiers];
     
+    
+    // 7. pt2. Bundle the returned integer into an NSNumber and then convert it 
+    //    to a NSString and pass it to the DisplayAlertWithString function.
     [self displayAlertWithString:armory];
     
     [self displayAlertWithString:commandRespond];
@@ -83,6 +94,9 @@
 //    This function will take two NSInteger or int types and 
 //    return the result of an addition between these two.
 
+// 6. Call the Add function passing in two integer values. 
+//    Capture the return of this function into a variable.
+
 - (int)Add:(int)firstInt with:(int)secondInt
     {
         return firstInt + secondInt;
@@ -90,6 +104,9 @@
 
 // 2. Create a function called Compare that takes two NSInteger values. 
 //    Return true or false based on whether the values are equal.
+// 9. Call the Compare function with two integer values. 
+//    If Compare returns true, display an UIAlertView both with the input values 
+//    and the result using the DisplayAlertWithString function
 
 - (BOOL)Compare:(int)firstInt2 with:(int)secondInt2
     {
@@ -106,6 +123,10 @@
 // 3. Create a function called Append. 
 //    This function will take two NSStrings and return a new NSString 
 //    containing the appended strings using an NSMutableString and the Append method.
+// 4. Call the Append function with two NSStrings. 
+//    Capture the result and display a UIAlertView with 
+//    the appended string using displayAlertWithString.
+
 
 - (NSString*)append: (NSString*)appString1 with:(NSString*)appString2
     {
@@ -115,10 +136,11 @@
     }
 
 
-// 4. Call the Append function with two NSStrings. 
-//    Capture the result and display a UIAlertView with 
-//    the appended string using displayAlertWithString.
-//  ABOVE.
+// 5. Create a function called DisplayAlertWithString. 
+//    This function will take as a parameter an NSString.
+// DisplayAlertWithString Function
+// 1. Take the passed in NSString and display it in the alert view
+// 2. Create an UIAlertView
 
 -(void)displayAlertWithString:(NSString *)addString
     {
@@ -129,32 +151,6 @@
             [alert release];
         }
     }
-
-// 5. Create a function called DisplayAlertWithString. 
-//    This function will take as a parameter an NSString.
-                                                                                                  
-//- (void) myDisplayAlertWithString: (NSString*)appString3
-  //  {
-    //    dispString = [[UIAlertView alloc] initWithTitle:@"Alert View" message:appString3 delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-   // }
-                                                                                                  
-                                                                                                  
-// 6. Call the Add function passing in two integer values. 
-//    Capture the return of this function into a variable.
-
-
-// 7. Bundle the returned integer into an NSNumber and then convert it 
-//    to a NSString and pass it to the DisplayAlertWithString function.
-
-
-// 8. Give it some text for the title. 
-//    The message will read, "The number is 00". 
-//    Replace the 00 with the integer passed into the function.
-
-
-// 9. Call the Compare function with two integer values. 
-//    If Compare returns true, display an UIAlertView both with the input values 
-//    and the result using the DisplayAlertWithString function
 
 
 // DisplayAlertWithString Function
