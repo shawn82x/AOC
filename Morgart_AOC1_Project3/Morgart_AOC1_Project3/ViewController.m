@@ -63,11 +63,14 @@
     commandRespond = [self append:generalsOrders with:soldiersResponse];
     
     // 4. Display "Append" function in UIAlertView
-    UIAlertView *appendView = [[UIAlertView alloc] initWithTitle:@"Append Function View" message:@"" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    if (appendView != nil)
-    {
-        [appendView show];
-    }
+    [self displayAlertWithString:armedSoldiers];
+    
+    [self displayAlertWithString:armory];
+    
+    [self displayAlertWithString:commandRespond];
+    
+    
+    
     
     [super viewDidAppear:animated];
     
@@ -106,7 +109,7 @@
 
 - (NSString*)append: (NSString*)appString1 with:(NSString*)appString2
     {
-        NSMutableString *appendOne = [NSMutableString addedString:appString1];
+        NSMutableString *appendOne = [NSMutableString stringWithString:appString1];
         NSString *appString3 = [appendOne stringByAppendingString:appString2];
         return appString3;
     }
@@ -116,16 +119,24 @@
 //    Capture the result and display a UIAlertView with 
 //    the appended string using displayAlertWithString.
 //  ABOVE.
-                                                                                                  
 
+-(void)displayAlertWithString:(NSString *)addString
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert View" message:addString delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        if (alert !=nil)
+        {
+            [alert show];
+            [alert release];
+        }
+    }
 
 // 5. Create a function called DisplayAlertWithString. 
 //    This function will take as a parameter an NSString.
                                                                                                   
-- (void) myDisplayAlertWithString: (NSString*)appString3
-    {
-        dispString = [[UIAlertView alloc] initWithTitle:@"Alert View" message:appString3 delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    }
+//- (void) myDisplayAlertWithString: (NSString*)appString3
+  //  {
+    //    dispString = [[UIAlertView alloc] initWithTitle:@"Alert View" message:appString3 delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+   // }
                                                                                                   
                                                                                                   
 // 6. Call the Add function passing in two integer values. 

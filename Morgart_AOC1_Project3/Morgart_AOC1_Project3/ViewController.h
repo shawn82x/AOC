@@ -13,7 +13,6 @@
     int oldSwords;
     int newSwords;
     int totalSwords;
-    int numOfWeapons;
     int fighters;
     
     NSString *commandRespond;
@@ -26,21 +25,27 @@
     NSString *appString1;
     NSString *appString2; 
     NSString *appString3;
+    
+    NSNumber *numOfWeapons;
+    
     UIAlertView *dispString;
 }
 // 1.
-- (void)myAdd:(NSString*)introString firstInt:(int)firstInt secondInt:(int)secondInt;
+//- (void)myAdd:(NSString*)introString firstInt:(int)firstInt secondInt:(int)secondInt;
+- (int)Add:(int)firstInt with:(int)secondInt;
 
 // 2.
-- (int)myCompare: (NSString*)introString2 firstInt2:(int)firstInt2 secondInt2:(int)secondInt2;
+//- (int)myCompare: (NSString*)introString2 firstInt2:(int)firstInt2 secondInt2:(int)secondInt2;
+- (BOOL)Compare:(int)firstInt2 with:(int)secondInt2;
 
 // 3.
-- (void)myAppend: (NSString*)appString1;
+//- (void)myAppend: (NSString*)appString1;
+- (NSString*)append: (NSString*)appString1 with:(NSString*)appString2;
 
 // 4.
-- (void)myAppend: (NSString*)appString1 appString2:(NSString*)appString2;
+//- (void)myAppend: (NSString*)appString1 appString2:(NSString*)appString2;
 
 // 5.
-- (void) myDisplayAlertWithString: (NSString*)appString3;
+//- (void) myDisplayAlertWithString: (NSString*)appString3;
 
 @end
