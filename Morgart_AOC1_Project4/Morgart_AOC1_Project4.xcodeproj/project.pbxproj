@@ -1,0 +1,294 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1395E2215928EF100E5A8FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1395E2115928EF100E5A8FB /* UIKit.framework */; };
+		F1395E2415928EF100E5A8FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1395E2315928EF100E5A8FB /* Foundation.framework */; };
+		F1395E2615928EF100E5A8FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1395E2515928EF100E5A8FB /* CoreGraphics.framework */; };
+		F1395E2C15928EF100E5A8FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F1395E2A15928EF100E5A8FB /* InfoPlist.strings */; };
+		F1395E2E15928EF100E5A8FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1395E2D15928EF100E5A8FB /* main.m */; };
+		F1395E3215928EF100E5A8FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1395E3115928EF100E5A8FB /* AppDelegate.m */; };
+		F1395E3515928EF100E5A8FB /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1395E3315928EF100E5A8FB /* MainStoryboard_iPhone.storyboard */; };
+		F1395E3815928EF100E5A8FB /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1395E3615928EF100E5A8FB /* MainStoryboard_iPad.storyboard */; };
+		F1395E3B15928EF100E5A8FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1395E3A15928EF100E5A8FB /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F1395E1D15928EF100E5A8FB /* Morgart_AOC1_Project4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Morgart_AOC1_Project4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1395E2115928EF100E5A8FB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F1395E2315928EF100E5A8FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F1395E2515928EF100E5A8FB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F1395E2915928EF100E5A8FB /* Morgart_AOC1_Project4-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Morgart_AOC1_Project4-Info.plist"; sourceTree = "<group>"; };
+		F1395E2B15928EF100E5A8FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F1395E2D15928EF100E5A8FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F1395E2F15928EF100E5A8FB /* Morgart_AOC1_Project4-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Morgart_AOC1_Project4-Prefix.pch"; sourceTree = "<group>"; };
+		F1395E3015928EF100E5A8FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F1395E3115928EF100E5A8FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F1395E3415928EF100E5A8FB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		F1395E3715928EF100E5A8FB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		F1395E3915928EF100E5A8FB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F1395E3A15928EF100E5A8FB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1395E1A15928EF100E5A8FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1395E2215928EF100E5A8FB /* UIKit.framework in Frameworks */,
+				F1395E2415928EF100E5A8FB /* Foundation.framework in Frameworks */,
+				F1395E2615928EF100E5A8FB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1395E1215928EF100E5A8FB = {
+			isa = PBXGroup;
+			children = (
+				F1395E2715928EF100E5A8FB /* Morgart_AOC1_Project4 */,
+				F1395E2015928EF100E5A8FB /* Frameworks */,
+				F1395E1E15928EF100E5A8FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1395E1E15928EF100E5A8FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1395E1D15928EF100E5A8FB /* Morgart_AOC1_Project4.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1395E2015928EF100E5A8FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1395E2115928EF100E5A8FB /* UIKit.framework */,
+				F1395E2315928EF100E5A8FB /* Foundation.framework */,
+				F1395E2515928EF100E5A8FB /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1395E2715928EF100E5A8FB /* Morgart_AOC1_Project4 */ = {
+			isa = PBXGroup;
+			children = (
+				F1395E3015928EF100E5A8FB /* AppDelegate.h */,
+				F1395E3115928EF100E5A8FB /* AppDelegate.m */,
+				F1395E3315928EF100E5A8FB /* MainStoryboard_iPhone.storyboard */,
+				F1395E3615928EF100E5A8FB /* MainStoryboard_iPad.storyboard */,
+				F1395E3915928EF100E5A8FB /* ViewController.h */,
+				F1395E3A15928EF100E5A8FB /* ViewController.m */,
+				F1395E2815928EF100E5A8FB /* Supporting Files */,
+			);
+			path = Morgart_AOC1_Project4;
+			sourceTree = "<group>";
+		};
+		F1395E2815928EF100E5A8FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F1395E2915928EF100E5A8FB /* Morgart_AOC1_Project4-Info.plist */,
+				F1395E2A15928EF100E5A8FB /* InfoPlist.strings */,
+				F1395E2D15928EF100E5A8FB /* main.m */,
+				F1395E2F15928EF100E5A8FB /* Morgart_AOC1_Project4-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1395E1C15928EF100E5A8FB /* Morgart_AOC1_Project4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1395E3E15928EF100E5A8FB /* Build configuration list for PBXNativeTarget "Morgart_AOC1_Project4" */;
+			buildPhases = (
+				F1395E1915928EF100E5A8FB /* Sources */,
+				F1395E1A15928EF100E5A8FB /* Frameworks */,
+				F1395E1B15928EF100E5A8FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Morgart_AOC1_Project4;
+			productName = Morgart_AOC1_Project4;
+			productReference = F1395E1D15928EF100E5A8FB /* Morgart_AOC1_Project4.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1395E1415928EF100E5A8FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Full Sail University";
+			};
+			buildConfigurationList = F1395E1715928EF100E5A8FB /* Build configuration list for PBXProject "Morgart_AOC1_Project4" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F1395E1215928EF100E5A8FB;
+			productRefGroup = F1395E1E15928EF100E5A8FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1395E1C15928EF100E5A8FB /* Morgart_AOC1_Project4 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1395E1B15928EF100E5A8FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1395E2C15928EF100E5A8FB /* InfoPlist.strings in Resources */,
+				F1395E3515928EF100E5A8FB /* MainStoryboard_iPhone.storyboard in Resources */,
+				F1395E3815928EF100E5A8FB /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1395E1915928EF100E5A8FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1395E2E15928EF100E5A8FB /* main.m in Sources */,
+				F1395E3215928EF100E5A8FB /* AppDelegate.m in Sources */,
+				F1395E3B15928EF100E5A8FB /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F1395E2A15928EF100E5A8FB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1395E2B15928EF100E5A8FB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F1395E3315928EF100E5A8FB /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1395E3415928EF100E5A8FB /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		F1395E3615928EF100E5A8FB /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1395E3715928EF100E5A8FB /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1395E3C15928EF100E5A8FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1395E3D15928EF100E5A8FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1395E3F15928EF100E5A8FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Morgart_AOC1_Project4/Morgart_AOC1_Project4-Prefix.pch";
+				INFOPLIST_FILE = "Morgart_AOC1_Project4/Morgart_AOC1_Project4-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F1395E4015928EF100E5A8FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Morgart_AOC1_Project4/Morgart_AOC1_Project4-Prefix.pch";
+				INFOPLIST_FILE = "Morgart_AOC1_Project4/Morgart_AOC1_Project4-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1395E1715928EF100E5A8FB /* Build configuration list for PBXProject "Morgart_AOC1_Project4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1395E3C15928EF100E5A8FB /* Debug */,
+				F1395E3D15928EF100E5A8FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1395E3E15928EF100E5A8FB /* Build configuration list for PBXNativeTarget "Morgart_AOC1_Project4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1395E3F15928EF100E5A8FB /* Debug */,
+				F1395E4015928EF100E5A8FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1395E1415928EF100E5A8FB /* Project object */;
+}
