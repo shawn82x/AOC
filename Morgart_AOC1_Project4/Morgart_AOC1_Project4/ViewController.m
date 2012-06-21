@@ -42,6 +42,9 @@
     {
         loginButton.frame = CGRectMake(230.0f, 40.0f, 80.0f, 30.0f);
         [loginButton setTitle:@"Login" forState:UIControlStateNormal];
+        // 5. (part a) Add a target to the UIButton to call a function called onClick when the user presses the Login button.
+        [loginButton addTarget:self action:@selector(onClick) forControlEvents:UIControlEventTouchUpInside];
+        
         [self.view addSubview:loginButton];
     }
     
@@ -54,15 +57,22 @@
         plsText.textAlignment = UITextAlignmentCenter;
     }
     
-// 5. Add a target to the UIButton to call a function called onClick when the user presses the Login button.
+
     
     
     
     [self.view addSubview:plsText];
     [self.view addSubview:userLabel];
     [self.view addSubview:userText];
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+// 5. (part b) Add a target to the UIButton to call a function called onClick when the user presses the Login button.
+- (void) onClick
+{
+    UIAlertView
 }
 
 - (void)viewDidUnload
