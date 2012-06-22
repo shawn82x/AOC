@@ -16,9 +16,11 @@
     UILabel *plsText;
     UIButton *infoButton;
     UIButton *dateButton;
+    UILabel *myInfo;
     
 }
 
-- (void) onClick: (UIButton*)button;
+- (void)onClick:(UIButton*)button;
+- (void)dateAlert:(NSString *)dateString;
 
 @end

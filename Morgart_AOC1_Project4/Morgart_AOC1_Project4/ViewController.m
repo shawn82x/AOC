@@ -8,11 +8,11 @@
 
 #import "ViewController.h"
 
+@interface ViewController ()
+
 #define B_INPUT 0
 #define B_DATE 1
 #define B_INFO 2
-
-@interface ViewController ()
 
 @end
 
@@ -84,10 +84,19 @@
     {
         infoButton.frame = CGRectMake(10.0f, 350.0f, 20.0f, 20.0f);
         infoButton.tag = 2;
+        [infoButton addTarget:self action:@selector(onClick) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:infoButton];
     }
     
+    myInfo = [[UILabel alloc] initWithFrame:CGRectMake(20.0f, 375.0f, 280.0f, 60.0f)];
+    if (myInfo != nil)
+    {
+        myInfo.textColor = [UIColor greenColor];
+        myInfo.textAlignment = UITextAlignmentCenter;
+        myInfo.numberOfLines = 2;
+    }
     
+    [self.view addSubview:myInfo];
     [self.view addSubview:plsText];
     [self.view addSubview:userLabel];
     [self.view addSubview:userInput];
@@ -97,30 +106,50 @@
 }
 
 // 5. (part b) Add a target to the UIButton to call a function called onClick when the user presses the Login button.
-- (void) onClick: (UIButton*)button
+- (void)onClick:(UIButton*)button;
 {
     if (button.tag == B_INPUT)
     {
-        NSString *loginText = [userInput text];
-        
-        plsText = [[UILabel alloc] initWithFrame:CGRectMake(20.0f, 100.0f, 280.0f, 60.0f)];
-        if (plsText != nil)
+        if (userInput.text.length >= 1)
+        {
+            NSString *inputText = [[NSString alloc] initWithString:userInput.text];
+            plsText.backgroundColor = [UIColor lightGrayColor];
+            plsText.text = [NSString stringWithFormat:@"Username: %@, has been logged in.", inputText];
+            plsText.textAlignment = UITextAlignmentCenter;
+        }
+        else
         {
             plsText.backgroundColor = [UIColor lightGrayColor];
-            plsText.text = @"User: %@, has been logged in.", loginText;
+            plsText.text = @"Username cannot be empty!";
+            plsText.textColor = [UIColor redColor];
             plsText.textAlignment = UITextAlignmentCenter;
         }
     }
     else if (button.tag == B_DATE)
     {
-        
+        NSDate *displayDate = [NSDate date];
+        NSDateFormatter *dispDateFormat = [[NSDateFormatter alloc] init];
+        if (dispDateFormat != nil)
+        {
+            [dispDateFormat setDateFormat:@"K:mm a,z on MMMM dd of yyyy"];
+        }
+        NSString *nowTime = [dispDateFormat stringFromDate:displayDate];
+        [self dateAlert:nowTime];
     }
     else if (button.tag == B_INFO)
     {
-        
+        myInfo.text = @"This application was written by: Shawn R. Morgart";
     }
         
 }
+
+// Function for UIAlert for Date/Time window
+- (void)dateAlert:(NSString *)dateString
+{
+    UIAlertView *datePop = [[UIAlertView alloc] initWithTitle:@"Time and Date:" message:dateString delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [datePop show];
+}
+
 
 - (void)viewDidUnload
 {
