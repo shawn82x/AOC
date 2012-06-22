@@ -8,6 +8,10 @@
 
 #import "ViewController.h"
 
+#define B_INPUT 0
+#define B_DATE 1
+#define B_INFO 2
+
 @interface ViewController ()
 
 @end
@@ -30,19 +34,22 @@
     
     
 // 2. Create a UITextField to the right of the username label
-    userText = [[UITextField alloc] initWithFrame:CGRectMake(110.0f, 10.0f, 200.0f, 20.f)];
-    if (userText != nil)
+    userInput = [[UITextField alloc] initWithFrame:CGRectMake(110.0f, 10.0f, 200.0f, 30.f)];
+    if (userInput != nil)
     {
-        userText.backgroundColor = [UIColor lightGrayColor];
+        userInput.backgroundColor = [UIColor lightGrayColor];
+        userInput.borderStyle = UITextBorderStyleRoundedRect;
     }
     
 // 3. Create a rounded rectangle UIButton of any color under the UITextField with the text "Login" on it.
     loginButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     if (loginButton != nil)
     {
-        loginButton.frame = CGRectMake(230.0f, 40.0f, 80.0f, 30.0f);
+        loginButton.frame = CGRectMake(230.0f, 45.0f, 80.0f, 30.0f);
         [loginButton setTitle:@"Login" forState:UIControlStateNormal];
+        
         // 5. (part a) Add a target to the UIButton to call a function called onClick when the user presses the Login button.
+        loginButton.tag = B_INPUT;
         [loginButton addTarget:self action:@selector(onClick) forControlEvents:UIControlEventTouchUpInside];
         
         [self.view addSubview:loginButton];
@@ -59,20 +66,47 @@
     
 
     
+// Information button
+    infoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
+    if (infoButton != nil)
+    {
+        infoButton.frame = CGRectMake(10.0f, 350.0f, 20.0f, 20.0f);
+        [self.view addSubview:infoButton];
+    }
     
     
     [self.view addSubview:plsText];
     [self.view addSubview:userLabel];
-    [self.view addSubview:userText];
+    [self.view addSubview:userInput];
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
 // 5. (part b) Add a target to the UIButton to call a function called onClick when the user presses the Login button.
-- (void) onClick
+- (void) onClick: (UIButton*)button
 {
-    UIAlertView
+    if (button.tag == B_INPUT)
+    {
+        NSString *loginText = [userInput text];
+        
+        plsText = [[UILabel alloc] initWithFrame:CGRectMake(20.0f, 100.0f, 280.0f, 60.0f)];
+        if (plsText != nil)
+        {
+            plsText.backgroundColor = [UIColor lightGrayColor];
+            plsText.text = @"User: %@, has been logged in.", loginText;
+            plsText.textAlignment = UITextAlignmentCenter;
+        }
+    }
+    else if (button.tag == B_DATE)
+    {
+        
+    }
+    else if (button.tag == B_INFO)
+    {
+        
+    }
+        
 }
 
 - (void)viewDidUnload

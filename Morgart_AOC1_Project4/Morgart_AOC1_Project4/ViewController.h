@@ -11,9 +11,10 @@
 @interface ViewController : UIViewController
 {
     UILabel *userLabel;
-    UITextField *userText;
+    UITextField *userInput;
     UIButton *loginButton;
     UILabel *plsText;
+    UIButton *infoButton;
     
 }
 
