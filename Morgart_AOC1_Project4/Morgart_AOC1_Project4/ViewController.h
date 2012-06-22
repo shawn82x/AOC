@@ -15,7 +15,10 @@
     UIButton *loginButton;
     UILabel *plsText;
     UIButton *infoButton;
+    UIButton *dateButton;
     
 }
+
+- (void) onClick: (UIButton*)button;
 
 @end

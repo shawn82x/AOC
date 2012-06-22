@@ -49,7 +49,7 @@
         [loginButton setTitle:@"Login" forState:UIControlStateNormal];
         
         // 5. (part a) Add a target to the UIButton to call a function called onClick when the user presses the Login button.
-        loginButton.tag = B_INPUT;
+        loginButton.tag = 0;
         [loginButton addTarget:self action:@selector(onClick) forControlEvents:UIControlEventTouchUpInside];
         
         [self.view addSubview:loginButton];
@@ -64,13 +64,26 @@
         plsText.textAlignment = UITextAlignmentCenter;
     }
     
+// Date Button
+    dateButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    if (dateButton != nil)
+    {
+        dateButton.frame = CGRectMake(10.0f, 250.0f, 100.0f, 30.0f);
+        [dateButton setTitle:@"Show Date" forState:UIControlStateNormal];
+        dateButton.tag = 1;
+        [dateButton addTarget:self action:@selector(onClick) forControlEvents:UIControlEventTouchUpInside];
+        
+        [self.view addSubview:dateButton];
+    }
+    
 
     
-// Information button
+// Information Button
     infoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
     if (infoButton != nil)
     {
         infoButton.frame = CGRectMake(10.0f, 350.0f, 20.0f, 20.0f);
+        infoButton.tag = 2;
         [self.view addSubview:infoButton];
     }
     
